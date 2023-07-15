@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(https://github.com/icareus1/headphones/assets/79919003/66c6dbaf-a8f7-46b4-abf2-eeab8700d0b2);
+    background-position: center;
+    background-size: auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.header-content {
+    margin-bottom: 5%;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.header-content h3 {
+    font-size: 2.25vmin;
+    margin-bottom: 2.5%;
+}
+
+.header-content h1 {
+    font-size: 4.6vmin;
+}
+
+.header-content p {
+    padding: 0 30% 0 30%;
+
+}
+
+.ctn {
+    padding:10px 20px;
+    background-color: #FF6565;
+    border-radius: 50px;
+    color: whitesmoke;
+    margin-bottom: 6.5%;
+}
+
+.navbar-menu {
+    align-self: flex-start;
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.navbar-menu ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-basis: 30%;
+    padding-bottom: .32%;
+}
+
+.nav-item a {
+    color: whitesmoke;
+    font-size: 2.5vmin;
+}
+
+#logo {
+    width: 161px;
+    height: 32px;
+}
