@@ -1,13 +1,12 @@
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}template{display:none}[hidden]{display:none}
 
-
 /* Importing font */
 
 @import url('https://fonts.googleapis.com/css2?family=Charis+SIL:ital,wght@0,400;0,700;1,400&family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400&display=swap');
 
 /* Variables */
-  
+
 :root {
     --small-font-size: 12px;
     --medium-font-size: 17px;
@@ -18,10 +17,11 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:b
 }
 
 /* General style (button, links, images, etc.) */
-  
+
 body {
     width: 100vw;
     height: 100vh;
+    overflow-x:hidden;
 }
   
 .nav-container {
@@ -75,7 +75,7 @@ header {
     color: var(--text-color);
     background-image: url("https://github.com/icareus1/headphones/assets/79919003/66c6dbaf-a8f7-46b4-abf2-eeab8700d0b2");
     background-position: center;
-    background-size: auto;
+    background-size: cover;
 }
 
 /* Navigation Bar*/
@@ -156,6 +156,84 @@ header .nav-container nav {
 }
 /* End Header content */
 
+/* Main */
+main {
+  width: 100%;
+  position: relative;
+  font-family: var(--char-font);
+}
+
+/* What we do Section */
+.section-title {
+  font-size: var(--large-font-size);
+  margin: auto;
+  font-weight: 700;
+  width: 100%;
+  text-align: center;
+}
+
+main p {
+  margin: 2rem auto;
+  line-height: 1.5;
+  font-size: var(--medium-font-size);
+  text-align: center;
+  width: 65%;
+}
+
+main .container {
+  padding: 4rem 2rem 4rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+main .section-items {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+
+main .section-items .item {
+  width: 20%;
+  margin: 0.5rem;
+  align-self: baseline;
+}
+
+main .section-items .item img {
+  display: block;
+  margin: 0 auto;
+}
+
+main .section-items .item h2 {
+  font-size: 18px;
+  text-align: center;
+}
+
+main .section-items .item p {
+  width: 100%;
+  margin: 0;
+  font-size: 16px;
+  padding: 0;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  main .section-items {
+    flex-wrap: wrap;
+  }
+
+  main .section-items .item {
+    width: 40%; /* Adjust the width of each item for spacing */
+    margin: 1rem;
+  }
+
+  main p {
+    width: 95%;
+  }
+}
+
+
 /* Responsive design layout(Mobile, tablet) */
 @media (max-width: 1200px) {
     header {
@@ -164,6 +242,9 @@ header .nav-container nav {
 }
   
 @media (max-width: 480px) {
+
+/* Header Section */
+
     header {
       background-position: 44% 50%;
     }
@@ -250,5 +331,34 @@ header .nav-container nav {
       margin: 14rem auto 0 auto;
       width: 100%;
     }
+
+      main .container {
+    padding: 4rem 2.5rem;
+  }
+/* End of Header Section */
+
+/* What we do Section */
+
+  main .section-items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main .section-items .item {
+    width: 100%;
+    margin: 1rem;
+  }
+
+  main .section-items .item p {
+    width: 70%;
+    margin: auto;
+  }
+
+  main p {
+    width: 100%;
+  }
+/* End of What we do Section */
+
+
 }
 /* End Responsive design layout */
