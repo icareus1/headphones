@@ -363,6 +363,9 @@ footer p {
 @media (max-width: 480px) {
 
 /* Header Section */
+    html {
+        overflow-x: hidden;
+    }
 
     header {
         background-position: 44% 50%;
@@ -376,6 +379,7 @@ footer p {
     .logo {
         width: 50%;
         height: auto;
+        padding-left:5.5rem ;
     }
   
     .nav-items {
@@ -496,6 +500,7 @@ footer p {
   
     footer .logo {
         max-width: 50%;
+        padding-right: 6rem;
     }
   
     .footer-nav {
